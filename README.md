@@ -157,26 +157,6 @@ export const authConfig = {
 
 To implement authentication in your application, you would have to create an Auth0 application and copy "domain" and "client id" to the `config.ts` file in the `client` folder. We recommend using asymmetrically encrypted JWT tokens.
 
-# Best practices
-
-To complete this exercise, please follow the best practices from the 6th lesson of this course.
-
-## Logging
-
-The starter code comes with a configured [Winston](https://github.com/winstonjs/winston) logger that creates [JSON formatted](https://stackify.com/what-is-structured-logging-and-why-developers-need-it/) log statements. You can use it to write log messages like this:
-
-```ts
-import { createLogger } from '../../utils/logger'
-const logger = createLogger('auth')
-
-// You can provide additional information with every log statement
-// This information can then be used to search for log statements in a log storage system
-logger.info('User was authorized', {
-  // Additional information stored with a log statement
-  key: 'value'
-})
-```
-
 # How to run the application
 
 ## Backend
